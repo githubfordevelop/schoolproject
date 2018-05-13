@@ -1,0 +1,48 @@
+﻿<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace命名空间，为了对sql语句进行隔离，方便管理，mapper开发dao方式，使用namespace有特殊作用  
+mapper代理开发时将namespace指定为mapper接口的全限定名  
+ -->
+<mapper namespace="com.chengxusheji.mapper.AchievementMapper"> 
+<!--在mapper.xml文件中配置很多的sql语句，执行每个sql语句时，封装为MappedStatement对象 
+mapper.xml以statement为单位管理sql语句  
+ -->
+	<!-- 添加论文记录 -->
+	<insert id="addAchievement" parameterType="achievement">
+		insert into t_achievement(ACHIEVEMENT_PONIT,ACHIEVEMENT_DESC,RESULT,ACHIEVEMENT_TYPE,userObj,PUBLISH_DATE,PROJECT_NAME,oneOther,Other,ACHIEVEMENT_STATE) values 
+		(#{achievement_ponit},#{achievement_desc},#{result},#{achievement_type},#{userObj.user_name},#{publish_date},#{project_name},#{oneOther},#{Other},#{achievement_state})
+	</insert>
+
+	<!-- 按照查询条件分页查询论文记录 -->
+	<select id="queryAchievement" resultMap="achievementMap" >
+		select t_achievement.* from t_achievement,t_userInfo ${where} and t_achievement.userObj = t_userInfo.user_name limit #{startIndex},#{pageSize}
+	</select>
+	<resultMap id="achievementMap" type="achievement">
+        <id property="achievement_id" column="achievement_id" />
+        <association property="userObj" column="userObj" select="com.chengxusheji.mapper.UserInfoMapper.getUserInfo" />
+    </resultMap>
+
+    <!-- 按照查询条件的论文记录数 -->
+	<select id="queryAchievementCount" resultType="int">
+		select count(*) from t_achievement,t_userInfo ${where} and t_achievement.userObj = t_userInfo.user_name
+	</select>
+
+<!-- 根据主键查询某个论文记录 -->
+	<select id="getAchievement" parameterType="int" resultMap="achievementMap">
+		select * from t_achievement where t_achievement.ACHIEVEMENT_ID = #{achievement_id}
+	</select>
+	
+	<!-- 删除论文记录 -->
+	<delete id="deleteAchievement" parameterType="int">
+		delete from t_achievement where ACHIEVEMENT_ID=#{achievement_id}
+	</delete>
+	
+	<!-- 更新业绩记录 -->
+	<update id="updateAchievement" parameterType="achievement">
+		update t_achievement set ACHIEVEMENT_PONIT=#{achievement_ponit},oneOther=#{oneOther},Other=#{Other},ACHIEVEMENT_DESC=#{achievement_desc},RESULT=#{result},ACHIEVEMENT_TYPE=#{achievement_type},PUBLISH_DATE=#{publish_date},PROJECT_NAME=#{project_name},ACHIEVEMENT_STATE=#{achievement_state} where ACHIEVEMENT_ID = #{achievement_id}
+	</update>
+	
+ <!-- 按照查询条件查询所有论文记录 -->
+	<select id="queryAchievementList" resultMap="achievementMap" >
+		select t_achievement.* from t_achievement,t_userInfo ${where} and t_achievement.userObj = t_userInfo.user_name
+	</select>
+</mapper>

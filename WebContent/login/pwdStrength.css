@@ -1,0 +1,35 @@
+.vail_psw_err th, .vail_psw_err td{
+    background-color: #FDF0EF!important;
+}
+.vail_psw_err input{
+    border-color: #E24034!important;
+    border-width: 1px!important;
+    box-shadow: none!important;
+}
+.vail_psw_success td{
+    position: relative;
+}
+.vail_psw_success .help_inline:after{
+    position: absolute;
+    content: "●";
+    color: #60BE29;
+    font-size: 50px;
+    left: 274px;
+    top: 10px;
+}
+.vail_psw_success .help_inline:before{
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 6px;
+    border-bottom: 4px solid #fff;
+    border-left: 4px solid #fff;
+    border-bottom-left-radius: 2px;
+    left: 282px;
+    top: 17px;
+    z-index: 9;
+    -webkit-transform: scale(1) rotate(-50deg);
+    -ms-transform: scale(1) rotate(-50deg);
+    transform: scale(1) rotate(-50deg);
+    opacity: 1;
+}

@@ -1,0 +1,947 @@
+
+.header{
+    height: 100px;
+    margin: 0 auto;
+    width: 1000px;
+}
+.header .top{
+    padding: 10px 10px 0;
+    height: 90px;
+}
+.header .language a{
+    color: #565656;
+}
+.ids_nav{
+    background: none;
+}
+.ids_nav .ui_nav_h{
+    margin: 0;
+    background: none;
+}
+.ids_nav .ui_nav_h li{
+    background: url("tab_l.gif"/*tpa=http://authserver.zut.edu.cn/authserver/assets/img/tab_l.gif*/) no-repeat;
+    margin-left: 2px !important;
+    padding-left: 25px;
+    height: 25px;
+    position: relative;
+    cursor: pointer;
+}
+.ids_nav .ui_nav_h .first{
+    background: url("tab_l_first.gif"/*tpa=http://authserver.zut.edu.cn/authserver/assets/img/tab_l_first.gif*/) no-repeat;
+    margin-left: 0 !important;
+}
+.ids_nav .ui_nav_h li a{
+    background: #445c6c no-repeat;
+    height: 25px;
+    border: none;
+    padding: 0 10px;
+    margin: 0;
+    line-height: 25px;
+}
+.ids_nav .ui_nav_h li a .ids_menu_r_bg{
+    position: absolute;
+    top: 0;
+    right: -25px;
+    background: url("tab_r.gif"/*tpa=http://authserver.zut.edu.cn/authserver/assets/img/tab_r.gif*/) no-repeat;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    width: 25px;
+    height: 25px;
+}
+.ids_nav .ui_nav_h li a:visited,
+.ids_nav .ui_nav_h li a:hover{
+    border: none;
+    background: #445c6c no-repeat;
+}
+.ids_nav .ui_nav_h .active{
+    background: url("tab_l_active.gif"/*tpa=http://authserver.zut.edu.cn/authserver/assets/img/tab_l_active.gif*/) no-repeat;
+}
+.ids_nav .ui_nav_h .active a,
+.ids_nav .ui_nav_h .active a:visited,
+.ids_nav .ui_nav_h .active a:hover{
+    background: #fff;
+    color: #565656;
+    font-weight: bold;
+    font-size: 14px;
+}
+.ids_nav .ui_nav_h .active .ids_menu_r_bg{
+    background: url("tab_r_active.gif"/*tpa=http://authserver.zut.edu.cn/authserver/assets/img/tab_r_active.gif*/) no-repeat;
+}
+
+
+
+.login{
+    width: 100%;
+    height: 300px;
+    background: url("index_bg.jpg"/*tpa=http://authserver.zut.edu.cn/authserver/assets/img/index_bg.jpg*/) no-repeat;
+    position: relative;
+}
+.login_box{
+    position: absolute;
+    top: -50px;
+    right: 50px;
+    width: 350px;
+    height: 400px;
+    background: #2c6d92;
+    border-radius: 5px;
+    border: 1px solid rgba(255,255,255,0.8);
+    box-shadow: 1px 1px 1px #cdd4da;
+}
+.login_title{
+    margin: 25px auto 15px;
+    text-align: center;
+    height: 40px;
+}
+.login_title img{
+    width: 80px;
+    height: 60px;
+}
+.login_title span{
+    font: bold 24px/40px "Microsoft YaHei";
+    color: #b8d9e0;
+}
+.login_ipt{
+    width: 280px;
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    padding-top: 30px;
+}
+.no_bgcolor {
+    background: none;
+}
+/*后台返回错误提示样式*/
+.callback_err,
+.callback_success{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: auto;
+    /*border: 1px solid #FF8080;*/
+    background: url("errorIcon.png"/*tpa=http://authserver.zut.edu.cn/authserver/assets/img/errorIcon.png*/) no-repeat scroll 0 0 #FFF2F2;
+    padding-left: 20px;
+    height: 18px;
+    line-height: 18px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.callback_err1{
+    left: 23px;
+}
+.callback_err_login{
+    color: #ef5d44;
+    background: url("login_errorIcon.png"/*tpa=http://authserver.zut.edu.cn/authserver/assets/img/login_errorIcon.png*/) no-repeat scroll;
+    border: none;
+    left: 15px;
+    height: 24px;
+    line-height: 24px;
+    padding-left: 27px;
+}
+.callback_err_form{
+    bottom: 56px;
+    left: 177px;
+    top: auto;
+}
+.callback_form1{
+    left: 177px;
+    top: 30px;
+}
+.callback_form2{
+    top: 0;
+    left: 400px;
+}
+.callback_success{
+    background: url("okIcon.png"/*tpa=http://authserver.zut.edu.cn/authserver/assets/img/okIcon.png*/) no-repeat scroll 0 0 #E7F7C6;
+    border: 1px solid #A2EC90;
+}
+.login_ipt .login_ipt_row{
+    border-bottom: 1px solid #d9d9d9;
+    white-space: nowrap;
+    height: 40px;
+    background-color: #fff;
+}
+.login_ipt .last_ipt{
+    border: none;
+    border-radius: 0 0 5px 5px;
+}
+.login_ipt .first{
+    border-radius: 5px 5px 0 0;
+}
+.login_ipt .last{
+    border-bottom: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    height: 70px;
+}
+.login_ipt .login_ipt_row span,
+.login_ipt .login_ipt_row label{
+    padding: 0 5px 0 15px;
+    color: #636363;
+    font: 14px/40px "simsun";
+    vertical-align: middle;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+.login_ipt_en .login_ipt_row label{
+    width: 90px;
+    text-align: right;
+    overflow: hidden;
+}
+.login_ipt .login_ipt_row input{
+    background: none;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    padding: 4px 0;
+    vertical-align: middle;
+    font-size:14px;
+    border-radius: 0;
+}
+/*错误样式*/
+.login_ipt .login_ipt_row .error_bg{
+    background: url("invalid_line.gif"/*tpa=http://authserver.zut.edu.cn/authserver/assets/img/invalid_line.gif*/) left bottom repeat-x;
+}
+.login_ipt img,
+.login_ipt .login_ipt_row img{
+    margin-left: 3px;
+    vertical-align: middle;
+    border: none;
+}
+.login_ipt .chk_text{
+    color: #1dadff;
+    font: 14px "simsun";
+    vertical-align: baseline;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.login_tip{
+    width: 280px;
+    margin: 5px auto 0;
+    color: #1dadff;
+    text-align: center;
+}
+.login_tip .forget_pwd{
+    text-align: center;
+    color: #1dadff;
+    font: 14px "simsun";
+}
+
+/*content*/
+.content{
+    margin-top: 80px;
+    overflow: hidden;
+}
+.content .ui_list{
+    margin-left: 30px;
+}
+.content .ui_list li{
+    border-bottom: none;
+    position: relative;
+    margin:5px 0;
+}
+.content .ui_list li a{
+    font-size: 16px;
+    font-weight: bold;
+    color: #c75900;
+    cursor: auto;
+    text-decoration: none;
+    margin-left: 50px;
+}
+.content .ui_list li a:hover{
+    color: #c75900;
+}
+.content .ui_list li .link{
+    cursor: pointer;
+    text-decoration: #000000;
+}
+.ui_list .item_inner p{
+    width: auto;
+    color: #565656;
+    margin-left: 50px;
+}
+.ui_list .item_inner .second{
+    color: #ababab;
+}
+.content1{
+    background: #fff;
+    padding-bottom: 20px;
+    margin-top: 0;
+    margin-bottom: 100px;
+}
+
+/*footer*/
+
+.footer .copy{
+    border-top: 1px solid #dbdbdb;
+    width: 1000px;
+    padding-top: 20px;
+}
+.footer .copy,
+.footer .support{
+    margin: 0 auto;
+    text-align: center;
+    line-height: 16px;
+    color: #f3f3f3;
+    font-size: 12px;
+}
+
+/*ids_tab begin*/
+.main{
+    margin: 60px auto 0;
+    min-height: 540px;
+    width: 1000px;
+}
+.relative{
+    position: relative;
+}
+.main1{
+    /*min-height: 723px;*/
+    margin-top: 0;
+    position: relative;
+    overflow: hidden;
+}
+.main .ids_tab{
+    top: -25px;
+}
+.main .login_info{
+    line-height: 25px;
+    height: 25px;
+    float: right;
+    padding: 0 10px;
+}
+.main .login_info span{
+    margin-right: 10px;
+}
+.main .login_info a{
+    width: 18px;
+    height: 18px;
+}
+.main .ids_tab .l-tab-links{
+    height: 25px;
+    border-bottom: none;
+}
+.main .ids_tab .l-tab-links li{
+    background: url("tab_l.gif"/*tpa=http://authserver.zut.edu.cn/authserver/assets/img/tab_l.gif*/) no-repeat;
+    padding-left: 25px;
+    height: 25px;
+    margin-left: -28px !important;
+}
+.main .ids_tab .l-tab-links .maintab_left{
+    background: #445c6c no-repeat;
+    height: 25px;
+}
+.main .ids_tab .l-tab-links .maintab_right{
+    background: url("tab_r.gif"/*tpa=http://authserver.zut.edu.cn/authserver/assets/img/tab_r.gif*/) no-repeat;
+    width: 25px;
+    height: 25px;
+}
+.main .ids_tab .l-tab-links .first{
+    background: url("tab_l_first.gif"/*tpa=http://authserver.zut.edu.cn/authserver/assets/img/tab_l_first.gif*/) no-repeat;
+    margin-left: 0 !important;
+}
+.main .ids_tab .l-tab-links .l-selected{
+    background: url("tab_l_active.gif"/*tpa=http://authserver.zut.edu.cn/authserver/assets/img/tab_l_active.gif*/) no-repeat;
+}
+.main .ids_tab .l-tab-links .l-selected{
+    background: url("tab_l_active.gif"/*tpa=http://authserver.zut.edu.cn/authserver/assets/img/tab_l_active.gif*/) no-repeat;
+}
+.main .ids_tab .l-tab-links .l-selected .maintab_left{
+    background: #fff no-repeat;
+}
+.main .ids_tab .l-tab-links .l-selected .maintab_right{
+    background: url("tab_r_active.gif"/*tpa=http://authserver.zut.edu.cn/authserver/assets/img/tab_r_active.gif*/) no-repeat;
+    width: 25px;
+    height: 25px;
+}
+.main .ids_tab .l-tab-links li .maintab_left a{
+    color: #fff;
+    margin: 0 10px;
+    font-size: 14px;
+}
+.main .ids_tab .l-tab-links .l-selected .maintab_left a{
+    color: #565656;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.main .ids_tab .l-tab-content{
+    padding-top: 0;
+    height: 100%;
+    background: #fff !important;
+}
+/*ids_menu*/
+.ids_menu{
+    position: absolute;
+}
+/*ids_tab end*/
+.body_bg{
+    background: url("main_bg.gif"/*tpa=http://authserver.zut.edu.cn/authserver/assets/img/main_bg.gif*/) repeat-x;
+}
+body{
+
+    height: 100%;
+}
+.ids_wrap{
+    width: 100%;
+}
+.ids_wrap .header{
+    height: 100px;
+}
+/*iframe高度*/
+.l-tab .l-tab-content-item iframe{
+    height: 723px;
+    min-height: 723px;
+    margin: 0;
+}
+.tab01,
+.tab02{
+    padding-top: 40px;
+    height: 100%;
+    margin: 0 50px;
+}
+.tab01 .ui_form h2{
+    color: #c75900;
+    border-bottom: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+.ui_table th,
+.ui_table td{
+    background: none;
+    border: none;
+}
+.ui_table td input{
+    *margin: 2px 0;
+    vertical-align: middle;
+}
+.ui_table td p{
+    line-height: 30px;
+}
+.input_xlarge_select{
+    width: 284px;
+}
+.ui_table th{
+    text-align: right;
+    color: #565656;
+    font-weight: normal;
+}
+.ui_table td span{
+    color: #ff0000;
+    margin-right: 3px;
+    line-height: 20px;
+    font-family: MisSun;
+}
+.ui_table .help_inline{
+    color: #ababab;
+}
+.tab01 .ui_form_actions{
+    border: none;
+    margin: 0;
+    margin-left: 177px;
+    padding: 0;
+}
+
+/*认证日志页面*/
+.tab02 .mt-30{
+    margin-top: 30px;
+}
+.tab02 h2{
+    color: #c75900;
+    font:bold 16px/40px "microsoft yahei","simsun";
+    margin-top: 0;
+}
+.tab02 .tip_message{
+    padding-top: 100px;
+    text-align: center;
+}
+.tab02 .tip_message span{
+    color: #565656;
+}
+.tab02 .tip_message span a{
+    color: #1dadff;
+    font: 12px "simsun";
+}
+.tab02 .search{
+    border: 1px solid #d9d9d9;
+    border-radius: 5px;
+}
+.tab02 .search .p3015{
+    padding: 30px 15px;
+    position: relative;
+}
+.tab02 .search .pull_right{
+    float: right;
+}
+.tab02 .search .search_item{
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    vertical-align: top;
+}
+.tab02 .search .item_center{
+    margin-left: 30px;
+    width: 520px;
+}
+
+.tab02 .search label{
+    font: 14px/32px "simsun";;
+    padding: 0 8px;
+}
+.tab02 .search select,
+.tab02 .search input{
+    font: 14px "simsun";
+    vertical-align: middle;
+}
+.tab02 .table_radius{
+    margin-top: 20px;
+    border: 1px solid #d9d9d9;
+    border-radius: 5px;
+    position:relative;
+}
+.tab02 .ui_table{
+    border: none;
+    margin-bottom: 0;
+}
+.tab02 .ui_table thead{
+    border-bottom: 1px solid #b7cbcd;
+}
+.tab02 .ui_table thead th{
+    background: url("table_h_bg.gif"/*tpa=http://authserver.zut.edu.cn/authserver/assets/img/table_h_bg.gif*/) repeat-x;
+    font-size: 16px;
+}
+.tab02 .ui_table th,
+.tab02 .ui_table td{
+    border: none;
+    text-align: center;
+    padding: 5px 0;
+}
+.tab02 .ui_table td a{
+    color: #00a2ff;
+}
+.tab02 .ui_table .tr_with_bg td{
+    background: #eef4f6;
+}
+.ids_pagination{
+    text-align: right;
+}
+.ids_pagination ul li{
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    border: 1px solid #e5e5e5;
+    margin-left: 5px;
+}
+.ids_pagination ul li a,
+.ids_pagination ul li span{
+    color: #054a91;
+}
+.ids_pagination ul li a:hover,
+.ids_pagination ul .active a,
+.ids_pagination ul .active span{
+    background: #4d90fe;
+}
+
+/*找回密码页面*/
+.main_content{
+    margin-top: 25px;
+    min-height: 500px;
+    background: #fff;
+}
+.main_content .ui_btn{
+    margin-left: 100px;
+}
+
+.help_inline{
+    *display: inline;
+    *zoom: 1;
+}
+/*为form添加错误提示样式支持*/
+.ui_form{
+    position: relative;
+}
+/*覆写影响的样式问题*/
+.main_content .tab01 .ui_btn{
+    margin-left: 0;
+}
+
+
+/*辅助类*/
+.mt10{
+    margin-top: 10px;
+}
+.mt25{
+    margin-top: 25px;
+}
+.pt0{
+    padding-top: 0;
+}
+/*按钮类*/
+.ids_ipt_submit,
+.ids_ipt_success,
+.ids_ipt_search{
+    width: 278px;
+    height: 46px;
+    line-height: 46px;
+    margin: 10px auto 0;
+    background: url("login_btn.gif"/*tpa=http://authserver.zut.edu.cn/authserver/assets/img/login_btn.gif*/) repeat-x;
+    padding: 0;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    *vertical-align: top;
+}
+.ids_ipt_submit,
+.ids_ipt_submit:link,
+.ids_ipt_submit:visited,
+.ids_ipt_submit:hover{
+    border-left:1px solid #ce8813;
+    border-right:1px solid #ce8813;
+    background: url("login_btn.gif"/*tpa=http://authserver.zut.edu.cn/authserver/assets/img/login_btn.gif*/) repeat-x;
+    *border: none;
+}
+.ids_ipt_success,
+.ids_ipt_success:link,
+.ids_ipt_success:visited,
+.ids_ipt_success:hover{
+    border-left:1px solid #7fac0a;
+    border-right:1px solid #7fac0a;
+    background: url("ids_ipt_success.gif"/*tpa=http://authserver.zut.edu.cn/authserver/assets/img/ids_ipt_success.gif*/) repeat-x;
+    *border: none;
+}
+.ids_ipt_search,
+.ids_ipt_search:link,
+.ids_ipt_search:visited,
+.ids_ipt_search:hover{
+    width: 100px;
+    height: 30px;
+    background: url("ids_ipt_search.gif"/*tpa=http://authserver.zut.edu.cn/authserver/assets/img/ids_ipt_search.gif*/) repeat-x;
+    margin: 0;
+    line-height: 30px;
+    color: #fff !important;
+    text-shadow:none;
+}
+/*icon*/
+.icon_id,
+.icon_tip,
+.icon_help,
+.icon_logout{
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.icon_id{
+    background: url("icon_id.gif"/*tpa=http://authserver.zut.edu.cn/authserver/assets/img/icon_id.gif*/) no-repeat;
+    width: 32px;
+    height: 25px;
+    top:3px;
+}
+.icon_tip{
+    background: url("icon_tip.gif"/*tpa=http://authserver.zut.edu.cn/authserver/assets/img/icon_tip.gif*/) no-repeat;
+    width: 21px;
+    height: 30px;
+}
+.icon_help{
+    background: url("icon_help.gif"/*tpa=http://authserver.zut.edu.cn/authserver/assets/img/icon_help.gif*/) no-repeat;
+    width: 28px;
+    height: 30px;
+}
+.icon_logout{
+    background: url("icon_logout.gif"/*tpa=http://authserver.zut.edu.cn/authserver/assets/img/icon_logout.gif*/) no-repeat;
+    width: 17px;
+    height: 18px;
+    position: static;
+    vertical-align: middle;
+}
+.icon_success,
+.icon_warning{
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    width: 28px;
+    height: 30px;
+    vertical-align: middle;
+}
+.icon_success{
+    background: url("icon_success.gif"/*tpa=http://authserver.zut.edu.cn/authserver/assets/img/icon_success.gif*/) no-repeat;
+}
+.icon_warning{
+    background: url("icon_warning.gif"/*tpa=http://authserver.zut.edu.cn/authserver/assets/img/icon_warning.gif*/) no-repeat;
+}
+.icon_person,
+.icon_info{
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    width: 32px;
+    height: 32px;
+    vertical-align: middle;
+}
+.icon_person{
+    background: url("icon_person.png"/*tpa=http://authserver.zut.edu.cn/authserver/assets/img/icon_person.png*/) no-repeat;
+}
+.icon_info{
+    background: url("icon_info.png"/*tpa=http://authserver.zut.edu.cn/authserver/assets/img/icon_info.png*/) no-repeat;
+}
+.icon_arrow{
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    width: 42px;
+    height: 70px;
+    vertical-align: middle;
+    background: url("icon_arrow.png"/*tpa=http://authserver.zut.edu.cn/authserver/assets/img/icon_arrow.png*/) no-repeat;
+
+}
+.icon_app{
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    width: 64px;
+    height: 64px;
+    vertical-align: middle;
+    background: url("icon_app.png"/*tpa=http://authserver.zut.edu.cn/authserver/assets/img/icon_app.png*/) no-repeat;
+
+}
+.oauth h3{
+    font-size: 12px;
+    color:#565656;
+    font-weight: normal;
+    line-height: 20px;
+}
+.oauth .appname{
+    color: blue;
+    margin-right: 5px;
+}
+.oauth_content{
+    float: left;
+    margin-right: 40px;
+    padding-right: 10px;
+    border-right:1px solid #ddd;
+    width: 650px;
+}
+.oauth_content li{
+    margin: 10px 0;
+    display: inline-block;
+    width:100%;
+}
+.oauth_content li span{
+    float: left;
+    margin-right: 10px;
+}
+.oauth_content li span input[type="checkbox"]{
+    margin-top: 16px;
+}
+.oauth_content li span i{
+    margin-top: 10px;
+}
+.oauth_content .title{
+    font-size: 12px;
+    color:#555;
+    margin: 5px 0;
+}
+.oauth_content .des{
+    color:#999;
+}
+
+/*联合登录绑定样式 开始*/
+
+.table_radius {
+    line-height: 22px;
+    color: #999;
+    margin-bottom:50px;
+}
+
+.gbind li {
+    display: block;
+    line-height: 35px;
+    height: 35px;
+    margin: 10px 35px;
+    padding: 10px 0;
+}
+
+.gbind span {
+    display: block-inline;
+}
+
+.gbind .gicon-span {
+    position: absolute;
+    padding: 0 10px 0 58px;
+    z-index: 1;
+    background-color: #fff;
+}
+
+.gbind .gicon-weibo{
+    background: url("weibo-big.png"/*tpa=http://authserver.zut.edu.cn/authserver/assets/img/combinedlogin/weibo-big.png*/) no-repeat;
+}
+
+.gbind .gicon-qq{
+    background: url("qq-big.png"/*tpa=http://authserver.zut.edu.cn/authserver/assets/img/combinedlogin/qq-big.png*/) no-repeat;
+}
+
+.gbind .gicon-test{
+    background: url("login.htm"/*tpa=http://authserver.zut.edu.cn/authserver/assets/img/combinedlogin/qq-test.png*/) no-repeat;
+}
+
+.gbind .gbind-line {
+    border-top: 1px dotted #d9d9d9;
+    height: 0;
+    top: 19px;
+    width: 50%;
+    position: relative;
+    display: block;
+}
+
+.gbind .gicon-binded, .gbind .gicon-bind {
+    margin: 8px 0 0 50%;
+    z-index: 1;
+    background-color: #fff;
+}
+
+.combinedLogin-weibo,.combinedLogin-qq,.combinedLogin-test{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.combinedLogin-weibo{
+    background: url("weibo-normal.png"/*tpa=http://authserver.zut.edu.cn/authserver/assets/img/combinedlogin/weibo-normal.png*/) no-repeat;
+}
+
+.combinedLogin-qq{
+    background: url("qq-normal.png"/*tpa=http://authserver.zut.edu.cn/authserver/assets/img/combinedlogin/qq-normal.png*/) no-repeat;
+}
+
+/*联合登录绑定样式 结束*/
+
+/**多种登录方式风格tab切换*/
+
+ul.tabs {
+    margin: 0;
+    padding: 0;
+    float: left;
+    list-style: none;
+    height: 32px; /*–Set height of tabs–*/
+    border-bottom: 1px solid #999;
+    border-left: 1px solid #999;
+    width: 100%;
+}
+
+ul.tabs li {
+    float: left;
+    margin: 0;
+    padding: 0;
+    height: 31px; /*–Subtract 1px from the height of the unordered list–*/
+    line-height: 31px; /*–Vertically aligns the text within the tab–*/
+    border: 1px solid #999;
+    border-left: none;
+    margin-bottom: -1px; /*–Pull the list item down 1px–*/
+    overflow: hidden;
+    position: relative;
+    background: #e0e0e0;
+}
+
+ul.tabs li a {
+    text-decoration: none;
+    color: #000;
+    display: block;
+    font-size: 1.2em;
+    padding: 0 10px;
+    border: 1px solid #fff; /*–Gives the bevel look with a 1px white border inside the list item–*/
+    outline: none;
+}
+
+ul.tabs li a:hover {
+    background: #ccc;
+}
+
+html ul.tabs li.active, html ul.tabs li.active a:hover {
+    /*–Makes sure that the active tab does not listen to the hover properties–*/
+    background: #fff;
+    border-bottom: 1px solid #fff; /*–Makes the active tab look like it's connected with its content—*/
+}
+
+.tab_container {
+    border-top: none;
+    overflow: hidden;
+    clear: both;
+    float: left;
+    width: 100%;
+}
+
+.tab_content {
+    padding: 20px;
+    font-size: 1.2em;
+}
+
+/**多种登录方式结束*/
+
+/**个人设置样式开始*/
+.setting_help {
+    margin-top: 5px;
+    margin-left: 10px;
+    font-size: 9pt;
+    color: #8A8A8A;
+}
+
+.setting_div {
+    margin-left: 5px;
+    margin-top: 10px;
+    width: 98%;
+    float: left;
+    margin-bottom: 8px;
+    color: #565656;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+
+.setting_div input {
+    padding: 2px 2px;
+}
+
+
+.setting_flow{
+    margin-top:0px;
+    margin-left: 10px;
+    margin-bottom: 25px;
+    /*border: 1px solid #d9d9d9;*/
+    /*border-radius: 5px;*/
+}
+
+.padding_left10 {
+    padding-left: 10px;
+}
+
+.setting_grid {
+    width: 30%;
+    float: left;
+    line-height: 27px;
+}
+
+.setting_text_div{
+    width: 110px;
+    float: left;
+}
+/**个人设置样式结束*/
+
+/** 个人自助页面的返回按钮样式 **/
+.ids_ipt_btn_return,.ids_ipt_btn_return:hover {
+    line-height: 20px;
+    height: 25px;
+    background: #989FA3;
+    border-color: #989FA3;
+    font-size: 12px;
+    font-weight: bold;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    color: #fff !important;
+
+}
+/** 个人自助页面的提交按钮样式结束 **/
